@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <style>
+        .task {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            
+        }
+
+        .task button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Ma liste de tâches</h2>
+
+    <div id="todoList">
+        <!-- Exemple de tâche -->
+        <input type="text" id="input" placeholder="task here">
+        <button id="ajouter">ajouter</button>
+       <!-- ******************************** -->
+        <div class="task" data-task-id="1"> 
+            <span>faire course</span>
+            <div>
+                <button onclick="fctt(this)"class="completeTask">Accomplir</button>
+                <button onclick="fct(this)"   class="deleteTask">Supprimer</button>
+            </div>
+        </div>
+       <!-- ******************************** -->
+
+        <!-- Les tâches suivantes seront ajoutées ici -->
+    </div>
+
+    <script>
+        let ajouter = document.getElementById("ajouter");
+        ajouter.addEventListener('click', () => {
+            
+            let input = document.getElementById("input").value;
+            let span = document.createElement("span");
+            span.textContent = input;
+            let taskbtn = document.createElement("div");
+            taskbtn.innerHTML = '<button onclick="fctt(this)" class="completeTask">Accomplir</button> <button onclick="fct(this) " class="deleteTask" > Supprimer</button > ';
+            let divtask = document.createElement("div");
+            divtask.classList.add("task");
+            divtask.append(span, taskbtn);
+            let todo = document.getElementById("todoList");
+            todo.appendChild(divtask);
+
+        })
+        function fct(e){
+           e.parentElement.parentElement.remove();
+            
+        }
+        function fctt(e){
+        
+        e.parentElement.parentElement.classList.add('completed');
+        
+    }
+        
+        
+
+
+
+        
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
