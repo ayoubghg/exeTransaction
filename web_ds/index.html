@@ -4,6 +4,7 @@
     <!-- <meta http-equiv="refresh" content="3"> -->
     <meta charset="UTF-8">
     <title>Exercice Transaction</title>
+   
 </head>
 <body>
 
@@ -86,6 +87,90 @@
         document.getElementById("totalPrix").textContent = totaltransaction;
     });
 </script>
+<style>
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
 
+h2 {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+tfoot span {
+    font-weight: normal;
+}
+
+tfoot p {
+    margin-top: 10px;
+}
+
+tfoot p:first-child {
+    margin-top: 0;
+}
+#totalPrix,
+#nombreTransactions {
+    font-weight: bold;
+}
+
+#totalPrix {
+    color: #4caf50;
+}
+
+#nombreTransactions {
+    color: #f44336;
+}
+
+    
+</style>
 </body>
 </html>
