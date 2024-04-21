@@ -72,18 +72,160 @@
         e.parentElement.parentElement.classList.add('completed');
         
     }
-        
-        
+     </script>
+    <style>
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
 
+h2 {
+    text-align: center;
+}
 
+div {
+    margin-bottom: 20px;
+}
 
-        
+label {
+    display: block;
+    margin-bottom: 5px;
+}
 
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+button:hover {
+    background-color: #45a049;
+}
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-    </script>
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+tfoot span {
+    font-weight: normal;
+}
+
+tfoot p {
+    margin-top: 10px;
+}
+
+tfoot p:first-child {
+    margin-top: 0;
+}
+#totalPrix,
+#nombreTransactions {
+    font-weight: bold;
+}
+
+#totalPrix {
+    color: #4caf50;
+}
+
+#nombreTransactions {
+    color: #f44336;
+}
+
+    
+</style>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+.task {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task button:hover {
+    background-color: #d32f2f;
+}
+
+.task button.completeTask {
+    background-color: #4caf50;
+}
+
+.task button.completeTask:hover {
+    background-color: #388e3c;
+}
+
+#input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#ajouter {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#ajouter:hover {
+    background-color: #0056b3;
+}
+
+</style>
 
 </body>
 
